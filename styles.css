@@ -59,6 +59,108 @@ a {
     padding: 1rem;
 }
 
+/* selecting by space */
+.space .child{
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lightsalmon;
+    border-bottom: 2px solid purple;
+}
+
+.child{
+    background-color: gray;
+    padding: 1rem;
+}
+
+.space{
+    background-color: saddlebrown;
+    padding: 1rem;
+}
+
+.space h2{
+    font-size: 3vw;
+    color: seagreen;
+}
+
+/* using comma to apply styles */
+.comma #one,#two,.three,.four,.child{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    background-color: linen;
+    border: 1px solid greenyellow;
+    padding: 0.5rem 1rem;
+    color: blueviolet;
+}
+
+/* Applying :hover */
+.hover:hover{
+    background-color: cadetblue;
+    border-right: 4px solid green;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+/* pseudo-element selector */
+.blog p::first-letter{
+    font-size: 5vw;
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* selecting using first/last or nth-child */
+.para p:first-child{
+    background-color: green;
+    color: burlywood;
+}
+
+.para p:last-child{
+    background-color: brown;
+    color: gold;
+}
+
+.para p:nth-child(2){
+    background-color: gray;
+    color: blue;
+}
+
+.para p:nth-child(3){
+    background-color: darkorchid;
+    color: white;
+}
+
+.even p:nth-child(odd){
+    background-color: aquamarine;
+    padding: 0.5rem 1rem;
+}
+
+/* selecting by attribute */
+[href]{
+    background-color: gold;
+    padding: 1rem;
+    color: blue;
+}
+
+[class='even'] {
+    border-right: 5px solid peru;
+}
+
+[class $="e"] {
+    border-top: 2rem dashed plum;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 700px) {
